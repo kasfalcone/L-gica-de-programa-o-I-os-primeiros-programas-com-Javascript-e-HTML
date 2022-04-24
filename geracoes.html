@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pulaLinha() {
+		document.write("<br>");
+	}
+	
+	function mostra(resultado){
+		pulaLinha();
+		document.write(resultado);
+		pulaLinha();
+	}
+
+	var ano = 1500;
+	var anoAtual = 2022;
+	var mediaGeracao = 28;
+
+	var resultado = (anoAtual - ano);
+	var resultado2= resultado/mediaGeracao;
+	mostra("<big>Já se passaram "+resultado +" anos após a chegada dos portugueses ao Brasil.</big>");
+	mostra("<big>Desde " +ano+" até o ano atual "+anoAtual+" já se passaram "+resultado2+" gerações");
+</script>
