@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Estrelas</title>
+		<h2>Estrelas</h2>
+	</head>
+    <script>
+	
+        function pulaLinha() 
+        {
+            document.write("<br>"+"<br>");
+        }
+        
+        function mostra(frase){
+            document.write(frase);
+            pulaLinha();
+        }
+
+        for(var linha = 1; linha <=3; linha++)
+        {
+
+            for(var coluna =1; coluna<=10; coluna++)
+            {
+                document.write("*");
+            }
+            pulaLinha();
+            
+        }
+
+
+
+    </script>
+</html>

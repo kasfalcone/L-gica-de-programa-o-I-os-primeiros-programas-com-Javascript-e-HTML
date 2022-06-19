@@ -23,10 +23,40 @@
 						
 	}
 
-	mostra("O meu imc é " + calculaImc(48,1.63));
+	var nome = prompt("Informe seu nome");
+    var pesoInformado = prompt(nome + ", informe seu peso");
+    var alturaInformadfa = prompt(nome + ", informe sua altura"); 
 
-	//var totalImc= calculaImc(75,1.77) + calculaImc(68,1.72);
-	//mostra("A soma dos imc's é " + totalImc);
+    var imc = calculaImc (pesoInformado, alturaInformadfa);
+
+    mostra(nome + ", o seu IMC é " +imc);
+
+	if (imc <= 18.9) 
+	{
+        mostra("Cuidado, você está com o peso baixo.")
+    } 
+
+    else if (imc > 18.9 && imc <= 24.9)
+	{
+        mostra("Parabéns, você com peso ideal.")
+    }
+
+    else if (imc >  24.9 && imc <=29.9)
+	{
+        mostra("Cuidado, você está com pré obesidade.") 
+    }
+	else if (imc >  29.9 && imc <=34.9)
+	{
+        mostra("Cuidado, você está com obesidade I.")  
+    }
+	else if (imc >  34.9 && imc <=39.9)
+	{
+        mostra("Cuidado, você está com obesidade II.")  
+    }
+	else if (imc >  40 )
+	{
+        mostra("Cuidado, você está com obesidade III.")  
+    }
 
 	
 

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Jogo Adivinha</title>
+		<h2>Jogo Adivinha</h2>
+	</head>
+    <script>
+	
+        function pulaLinha() {
+            document.write("<br>"+"<br>");
+        }
+        
+        function mostra(frase){
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var numeroPensado = Math.round(Math.random()*100);
+        var tentativas = 1;
+        while(tentativas <= 3)
+        {
+            var chute = parseInt(prompt("Digite seu chute!" ));
+
+                if(chute == numeroPensado)
+                {
+                    mostra("Você acertou, o número pensado era " + numeroPensado);
+                    break;
+                }
+                else
+                    mostra("Você errou");
+            tentativas++;
+        }
+        mostra("FIM!")
+        
+
+
+
+    </script>
+</html>
